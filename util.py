@@ -34,3 +34,8 @@ def bfs_dye(img, points, color):
     img[cur_pt[1]][cur_pt[0]] = color
   print('dye finished')
   return img
+
+def scatter(img, points, color):
+  for pt in points:
+    img[pt[1]][pt[0]] = color
+  return img
