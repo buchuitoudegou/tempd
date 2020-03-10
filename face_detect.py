@@ -7,7 +7,7 @@ import numpy as np
 import warp
 import util
 
-example_pth = './Paul-phase-1.png'
+example_pth = './Paul3-phase-1.png'
 detect_url = 'https://api-cn.faceplusplus.com/facepp/v3/detect'
 
 def get_image_landmark(img_pth):
@@ -36,9 +36,10 @@ for row in range(0, img.shape[0]):
   for col in range(0, img.shape[1]):
     if (img[row][col] == [7, 2, 251]).all():
       p.append([col, row])
+      img[row][col] = img[row][col + 1]
     elif (img[row][col] == [255, 0, 0]).all():
       q.append([col, row])
-      # print(img[row][col + 1])
+      img[row][col] = img[row][col + 1]
 
 p = np.array(p)
 q = np.array(q)
@@ -49,4 +50,4 @@ print('warp finished')
 cv2.imshow('test', img)
 cv2.waitKey()
 
-# cv2.imwrite('./output/Paul-phase-1.jpg', img)
+# cv2.imwrite('./output/Paul2-phase-1.jpg', img)
