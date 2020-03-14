@@ -3,11 +3,11 @@ api_secret = 'DzWtkHwCw52gfW8mkFAIU8pz8KtX3diI'
 
 example_pth = './Paul3-phase-1.png'
 detect_url = 'https://api-cn.faceplusplus.com/facepp/v3/detect'
-src_pth = './input/xuxiyuan-resize.jpg'
-dst_pth = './output/xuxiyuan.png'
+src_pth = './nigga/white_p.png'
+dst_pth = './output/white_warp.png'
 
 mouth_ext_size = 5
-nose_ext_size = 5
+nose_ext_size = 3
 chin_ext_size = 15
 eyes_ext_size = -2
 
