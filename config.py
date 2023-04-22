@@ -3,13 +3,13 @@ api_secret = 'DzWtkHwCw52gfW8mkFAIU8pz8KtX3diI'
 
 example_pth = './Paul3-phase-1.png'
 detect_url = 'https://api-cn.faceplusplus.com/facepp/v3/detect'
-src_pth = './nigga/white_p.png'
-dst_pth = './output/white_warp.png'
+src_pth = './mls_samples/white_p.png'
+dst_pth = 'mls_samples/white_p_.png'
 
-mouth_ext_size = 5
-nose_ext_size = 3
-chin_ext_size = 15
-eyes_ext_size = -2
+mouth_ext_size = 7
+nose_ext_size = 6
+chin_ext_size = 10
+eyes_ext_size = -3
 
 # right_eye_top_keys = [
 #   'right_eye_left_corner',

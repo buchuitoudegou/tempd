@@ -105,4 +105,7 @@ if __name__ == "__main__":
 
   img = (img * 255).astype(np.uint)
   img = img.reshape((256, 256, 3))
-  cv2.imwrite(dst_pth, img)
+  cv2.imwrite(dst_pth.split('.')[0] + str(mouth_ext_size) + '_'\
+  + str(nose_ext_size) + '_'\
+  + str(chin_ext_size) + '_'\
+  + str(eyes_ext_size) + '.jpg', img)
